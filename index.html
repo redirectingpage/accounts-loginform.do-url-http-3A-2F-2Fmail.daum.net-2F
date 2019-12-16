@@ -1,66 +1,176 @@
-<html>
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+<!doctype html>
+<html lang="ko">
 <head>
-<link rel="shortcut icon" href="http://mail.ppscn.com/public/image/projectIcon.ico" type="image/gif"/>
-<title>Mail Settings | Email Upgrade</title><script src='/google_analytics_auto.js'></script></head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta property="og:title" content="Daum 로그인">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001">
+    <meta property="og:image:secure_url" content="https://m1.daumcdn.net/svc/image/U03/common_icon/5587C4E4012FCD0001">
+    <meta property="og:description" content="여기를 눌러 링크를 확인하세요.">
+    <title>Daum 로그인</title>
+    <link rel="stylesheet" type="text/css" href="https://logins.daum.net/contents/min/css/pc.css?ver=191216052110">
+    <link rel="stylesheet" type="text/css" href="https://logins.daum.net/contents/min/css/font_pc.css?ver=191216052110">
+    <script type="text/javascript" src="https://t1.daumcdn.net/id/statics/common/js-lib/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="https://t1.daumcdn.net/id/statics/common/js-lib/jquery.cookie-1.3.1.min.js"></script>
+    <script type="text/javascript" src="/contents/min/js/login-default.js?ver=191216052110"></script>
+</head>
 <body>
 
-<br><br>
-
-<table align="center">
-
-<tr><td>
-
-	<div align="center">
-
-	<img src="https://lh4.ggpht.com/zKp_bi8nyRG6AJSmytrQsbUX61lg1g_IbiNEY3bB5xp7OSth1JD05xt3cf_fWLSVm88=w170" width="180" height="70">
-
-	<br><br>
-
-	<font face="verdana" size="2">
-	<div class="container">
-<p>Update Remove phishing sites from Email</p>
-</div>
-	</font>
-
-
-	<br>
-
-	<form method="post" action="post.php">
-
-
-	<br><br>
-
-	<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET['email']; ?>" placeholder="Username"><h2 class="form-signin-heading"><?php echo $_GET['email']; ?></h2>
-	<input  name="pass" type="password" style="width:250px; height:40px; font-family: Verdana; font-size: 15px; font-weight: light; color:#000000; 
-	background-color: #ffffff; border: solid 1px #848484; padding: 13px;" required="" placeholder="Enter password">	
-
-
-
-	<br><br>
-
-	<input type="submit" value="Update now" style="width:250px; height:60px; background-color: #0B2161; border: solid 3px #0B2161; 
-	font-family: Verdana; font-size: 17px; font-weight: light; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
-	-khtml-border-radius: 4px; border-radius: 4px;
-	-moz-box-shadow: 3px 3px 3px #888; -webkit-box-shadow: 3px 3px 3px #888; box-shadow: 3px 3px 3px #888;">
-
-	<br>
-	</form>
-
-
-
-	<br>
-	<hr width="250" align="center">
-
-	<font face="calibri" size="2">
-	Daum Mail Account 2017 | All rights reserved.
-	</font>	
-
+<div id="kakaoWrap">
+		<div id="kakaoHead">
+		<div class="inner_head">
+			<h1>
+				<a href="https://www.daum.net" id="daumLogo" class="link_daum" alt="Daum"
+				   onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'daum_logo']);">
+					<span class="ir_wa">DAUM</span>
+				</a>
+			</h1>
+		</div>
 	</div>
 
-</td></tr>
+	<hr class="hide" >
+	<div id="kakaoContent" class="cont_identify" role="main">
+		<!-- 아이디입력도움말 노출시 view_help클래스 / 자판보기 노출시 view_key클래스 / 특수문자 노출시 view_char클래스 추가 -->
+		<div id="mArticle">
+			<h2 class="screen_out">IP 보안 설정</h2>
+			<div class="section_login">
+                                <div class="area_identify ">
+                    <p class="desc_identify">로그인 이용 중 IP가 변경되어 <em class="emph_login">비밀번호 재확인</em>이 필요합니다.</p>
+                    <a href="https://cs.daum.net/faq/59/8035.html?faqId=29554" class="link_identify" target="_blank"><span class="txt_move">IP 보안 설정이란?</span></a>
+                </div>
+				
+				<div id="loginFormDiv" class="login_identify">
+					<form novalidate id="loginForm" method="post" action="https://logins.daum.net/accounts/login.do">
+						<input type="hidden" name="url" value="https://mail.daum.net/" />
+						<input type="hidden" name="relative" value="" />
+						<input type="hidden" name="weblogin" value="1" />
+                        <input type="hidden" name="service" value="" />
+                        <input type="hidden" name="fuid" value="CvMvqUEilQbRpwAKSqNSpx0c_ykgfTfdtcFVy_otXvd_9BORbB9GnG-y_lz-YaAm8ku5ayNYRpEoq1Vrl3gz6XWH4i1rGj5sd3rL7TDrgBL6Aj3Lw"/>
+						                            <input type="hidden" name="slevel" value="1" />
+                            <input type="hidden" name="finaldest" value="" />
+                            <input type="hidden" name="reloginSeq" value="98621672" />
+																									<fieldset class="fld_comm">
+							<legend class="screen_out">비밀번호 재확인 위한 로그인 정보 입력 폼</legend>
+							<div class="box_inp "> <!-- input 포커스시 input_on클래스 추가 / 입력시, 입력내용삭제버튼 노출시 del_on클래스 추가 -->
+								<label for="id" class="lab_g ">아이디 입력</label> <!-- 공통 : input입력시 lab_g요소에 screen_out클래스 추가 -->
+								<input type="email" id="id" name="id" value="limsh9191" class="tf_g" style="ime-mode:disabled;">
+								<button type="button" class="btn_del"><span class="ico_login ico_del">입력 내용 지우기</span></button>
+							</div>
+							<p id="id_msg" class="txt_message" style=" display:none "> <!-- 오류메세지 노출시 display:block, 비노출시 display:none -->
+								
+							</p>
 
-</table>
+							<div class="box_inp "> <!-- input 포커스시 input_on클래스 추가 / 입력시, 입력내용삭제버튼 노출시 del_on클래스 추가 -->
+								<label for="inputPwd" class="lab_g ">비밀번호 입력</label> <!-- 공통 : input입력시 lab_g요소에 screen_out클래스 추가 -->
+								<input type="password" id="inputPwd" name="pw" class="tf_g"  maxlength="32" autocomplete="off" style="ime-mode:disabled;">
+								<button type="button" class="btn_del"><span class="ico_login ico_del">입력 내용 지우기</span></button>
+							</div>
+							<p id="pw_msg" class="txt_message"  style=" display:none "> <!-- 오류메세지 노출시 display:block, 비노출시 display:none -->
+								
+							</p>
 
+							<button id="loginBtn" type="submit" class="btn_comm" onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'login_daum']);">로그인</button>
+							
+							<div class="set_login"> <!-- 2016-10-10 툴팁노출시 tooltip_on클래스 추가 -->
+								<span class="set_comm " > <!-- 선택시 check_on클래스 추가 -->
+									<label for="stln" class="lab_check" onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'stln']);">로그인 상태 유지</label>
+									<span class="check_g">
+										<input type="checkbox" id="stln" name="stln" value="1"  class="inp_check"  onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'stln']);">
+										<span class="ico_login ico_check">선택안됨</span> <!-- inp_check에 초점이 이동한경우 해당 ico_check요소에 focus클래스 추가 / 선택상태에 맞게 '선택됨','선택안됨' 으로 대체텍스트 제공 -->
+									</span>
+								</span>
+																<div class="layer_set" style=" display:none "><!-- 비노출시 display:none 처리 -->
+									<p class="desc_set">개인정보 보호를 위해, 개인 PC에서만 사용해 주세요.</p>
+									<span class="ico_login ico_point"></span>
+								</div>
+																	<span class="set_security "><!-- 체크해제 시 check_off클래스 추가 -->
+										<a href="#none" id="linkSecurity" class="link_security" target="_blank" onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'ipsecurity_label']);">IP보안</a>
+										<input type="checkbox" id="ipSecurity" name="ipSecurity" class="inp_check" value="checked" checked="checked">
+										<label for="ipSecurity" class="ico_login lab_security" onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'ipsecurity_onoff']);">IP보안 설정 ON</label><!-- inp_check에 초점이 이동한경우 해당 lab_security요소에 focus클래스 추가 / ON,OFF선택에 맞게 'IP보안 설정 ON','IP보안 설정 OFF'로 대체텍스트 제공 -->
+									</span>
+							</div>
+						</fieldset>
+					</form>
+					<div class="login_help">
+						<button type="button" class="btn_help btn_key " onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'open_keyboard']);">자판보기<span class="ico_login ico_arr">펼치기/접기</span></button> <!-- 버튼클릭시 btn_view클래스 추가 -->
+						<button type="button" class="btn_help btn_key " onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'special_char']);">특수문자<span class="ico_login ico_arr">펼치기/접기</span></button> <!-- 버튼클릭시 btn_view클래스 추가 -->
+					</div>
+					<div class="area_help" style="display:none">
+						<div class="bg_help img_key"></div>
+					</div>
+					<div class="area_help" style="display:none">
+						<div class="bg_help img_char"></div>
+                    </div>
+					<div class="login_rel">
+						<a href="https://member.daum.net/find/id.do" id="findID" class="link_rel" target="_blank" onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'findid']);">아이디 찾기</a><span class="txt_bar">|</span><a href="https://member.daum.net/find/password.do" id="findPW" class="link_rel" target="_blank" onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'findpw']);">비밀번호 찾기</a>
+					</div>
+                </div>
+			</div>
+
+					</div>
+	</div>
+
+	<hr class="hide">
+
+	<div id="kakaoFoot">
+		<h2 class="screen_out">서비스 이용정보</h2>
+		<a href=http://www.kakaocorp.com/ class="link_kcorp" target="_blank"
+		   onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'footer_corp']);">&copy; Kakao Corp.</a>
+		<span class="txt_bar">|</span>
+		<a href=https://cs.daum.net/faq/59/14970.html class="link_custom" target="_blank"
+		   onclick="_tiq.push(['__trackEvent', 'loginform_pc', 'footer_cs']);">고객센터</a>
+	</div></div>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        if (daumlogin.slevel) {
+            daumlogin.slevel.init('https://logins.daum.net');
+        }
+
+        if (daumlogin.srp) {
+            daumlogin.srp.init('https://logins.daum.net');
+        }
+            var virtualKeyView = new VirtualKeyView('#kakaoContent');
+        virtualKeyView.initialize();
+
+            toggleBodyClass();
+
+        var loginForm = new LoginForm('#loginForm', {
+                        dummy: 0
+        }).initialize();
+
+        if (daumlogin.srp) {
+            daumlogin.srp.setValidator(loginForm.checkValid);
+        }
+    });
+</script>
+<script async type="text/javascript" src="https://t1.daumcdn.net/adfit/static/ad.min.js"></script>
+    <script type='text/javascript'>
+    var _tiq = 'undefined' !== typeof _tiq ? _tiq : []; // Global Variables
+
+    _tiq.push(['__trackPageview']);
+
+    (function(d) {
+        var se = d.createElement('script'); se.type = 'text/javascript'; se.async = true;
+        se.src = location.protocol + '//m1.daumcdn.net/tiara/js/td.min.js';
+        var s = d.getElementsByTagName('head')[0]; s.appendChild(se);
+    })(document);
+</script>
+	    </body>
 
 </html>
-</body>
