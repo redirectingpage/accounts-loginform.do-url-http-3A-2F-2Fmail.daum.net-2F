@@ -44,31 +44,27 @@
 	</div>
 
 	<hr class="hide" >
-	<div id="kakaoContent" class="cont_identify" role="main">
+	<div id="kakaoContent" class="cont_login" role="main">
 		<!-- 아이디입력도움말 노출시 view_help클래스 / 자판보기 노출시 view_key클래스 / 특수문자 노출시 view_char클래스 추가 -->
 		<div id="mArticle">
-			<h2 class="screen_out">IP 보안 설정</h2>
+			<h2 class="screen_out">아이디 로그인</h2>
 			<div class="section_login">
-                                <div class="area_identify ">
-                    <p class="desc_identify">로그인 이용 중 IP가 변경되어 <em class="emph_login">비밀번호 재확인</em>이 필요합니다.</p>
-                    <a href="https://cs.daum.net/faq/59/8035.html?faqId=29554" class="link_identify" target="_blank"><span class="txt_move">IP 보안 설정이란?</span></a>
-                </div>
-				
-				<div id="loginFormDiv" class="login_identify">
+                
+				<div id="loginFormDiv" class="login_default">
 					<form novalidate id="loginForm" method="post" action="https://logins.daum.net/accounts/login.do">
-						<input type="hidden" name="url" value="https://mail.daum.net/" />
+						<input type="hidden" name="url" value="http://mail.daum.net/" />
 						<input type="hidden" name="relative" value="" />
 						<input type="hidden" name="weblogin" value="1" />
                         <input type="hidden" name="service" value="" />
-                        <input type="hidden" name="fuid" value="CvMvqUEilQbRpwAKSqNSpx0c_ykgfTfdtcFVy_otXvd_9BORbB9GnG-y_lz-YaAm8ku5ayNYRpEoq1Vrl3gz6XWH4i1rGj5sd3rL7TDrgBL6Aj3Lw"/>
+                        <input type="hidden" name="fuid" value="bw-yfiF0_pNxYxqCAKxAQF76AdQumcgtBwZj5Ui3rzbEW4-iDNXRh1ENR04nBVvegU51LYKEsO9IhEOTF2oh89I2pXK8oexuPBE4qlTSlxIPiVu6Q"/>
 						                            <input type="hidden" name="slevel" value="1" />
                             <input type="hidden" name="finaldest" value="" />
-                            <input type="hidden" name="reloginSeq" value="98621672" />
+                            <input type="hidden" name="reloginSeq" value="0" />
 																									<fieldset class="fld_comm">
-							<legend class="screen_out">비밀번호 재확인 위한 로그인 정보 입력 폼</legend>
+							<legend class="screen_out">아이디,비밀번호 로그인 정보 입력 폼</legend>
 							<div class="box_inp "> <!-- input 포커스시 input_on클래스 추가 / 입력시, 입력내용삭제버튼 노출시 del_on클래스 추가 -->
 								<label for="id" class="lab_g ">아이디 입력</label> <!-- 공통 : input입력시 lab_g요소에 screen_out클래스 추가 -->
-								<input type="email" id="id" name="id" value="limsh9191" class="tf_g" style="ime-mode:disabled;">
+								<input type="email" id="id" name="id" value="" class="tf_g" style="ime-mode:disabled;">
 								<button type="button" class="btn_del"><span class="ico_login ico_del">입력 내용 지우기</span></button>
 							</div>
 							<p id="id_msg" class="txt_message" style=" display:none "> <!-- 오류메세지 노출시 display:block, 비노출시 display:none -->
@@ -122,6 +118,9 @@
                 </div>
 			</div>
 
+						<div class="info_etc">
+                <ins class="daum_ddn_area" style="display:block" data-ad-frame-id="login_AMS" data-ad-frame-name="login_AMS" data-ad-unit="00Y28" data-ad-type="D" data-ad-width="250" data-ad-height="250"></ins>
+			</div>
 					</div>
 	</div>
 
